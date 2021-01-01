@@ -1,0 +1,28 @@
+.calculator {
+  background: #fff;
+  text-align: center;
+  width: 200px;
+  height:220px;
+  margin: auto;
+}
+#result {
+  width: auto;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.button-list {
+  margin-top: 5px;
+}
+.button-num {
+  font-size: 17px;
+  width: 35px;
+}
+
+.button-last {
+  font-size: 18px;
+  width: 70px;
+  height: 27px;
+}

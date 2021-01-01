@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="lesson4.css">
+        <title>電卓</title>
+    </head>
+    <body>
+        <div class="calculator">
+        <input type="text" id="result" placeholder="0" disabled="disabled" maxlength="9">
+        
+        <div class="button-list">
+            <input class="button-num" type="button" value="7" onclick="edit(this)">
+            <input class="button-num" type="button" value="8" onclick="edit(this)">
+            <input class="button-num" type="button" value="9" onclick="edit(this)">
+            <input class="button-num" type="button" value="+" onclick="edit(this)">
+        </div>
+        <div class="button-list">
+            <input class="button-num" type="button" value="4" onclick="edit(this)">
+            <input class="button-num" type="button" value="5" onclick="edit(this)">
+            <input class="button-num" type="button" value="6" onclick="edit(this)">
+            <input class="button-num" type="button" value="-" onclick="edit(this)">
+        </div>
+        <div class="button-list">
+            <input class="button-num" type="button" value="1" onclick="edit(this)">
+            <input class="button-num" type="button" value="2" onclick="edit(this)">
+            <input class="button-num" type="button" value="3" onclick="edit(this)">
+            <input class="button-num" type="button" value="*" onclick="edit(this)">
+        </div>
+        <div class="button-list">
+            <input class="button-num" type="button" value="0" onclick="edit(this)">
+            <input class="button-num" type="button" value="00" onclick="edit(this)">
+            <input class="button-num" type="button" value="." onclick="edit(this)">
+            <input class="button-num" type="button" value="/" onclick="edit(this)">
+        </div>
+         <div class="button-list">
+            <input class="button-last" id="clear" type="button" value="AC" onclick="reset()">
+            <input class="button-last" id="equal" type="button" value="=" onclick="calc()">
+        </div>
+        </div>
+        <script src="lesson4.js"></script>
+</html>
